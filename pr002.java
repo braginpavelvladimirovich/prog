@@ -24,6 +24,22 @@ class pr002 {
 				case 1:
 					System.out.println("k = 1");
 					break;
+				case 2:
+					System.out.println("k = 2");
+					break;
+				case 3:
+					System.out.println("k = 3");
+					break;
+				case 4:
+					System.out.println("k = 4");
+					break;
+				default:
+					System.out.println("k = 5 or > 5");
+					break;
 			}
+		if (!bool)
+			System.out.println("bool is true");
+		else
+			System.out.println("bool is false");
 	}
 }	
