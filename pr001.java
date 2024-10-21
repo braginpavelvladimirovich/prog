@@ -11,10 +11,22 @@ class pr001 {
 		float f;//32bit/4byte Stores fractional numbers. Sufficient for storing 6 to 7 decimal digits
 		double d;//64bit/8byte Stores fractional numbers. Sufficient for storing 15 decimal digits
 		//symbol
-		boolean bool;//1bit Stores true or false values
+		boolean bool = true;//1bit Stores true or false values
+		System.out.println("================");
+		System.out.println("\t" + bool);
+		System.out.println(!bool);
+		System.out.println(bool & !bool);
+		System.out.println(bool | !bool);
+		System.out.println(bool ^ !bool);
+		System.out.println("================");
+		System.out.println(bool && !bool);
+		System.out.println(bool || !bool);
+		System.out.println("================");
 		char c;//16bit/2byte Stores a single character/letter or ASCII values
-		c = (char)133;
-		System.out.println(c);
+		c = (char)0;
+		for (int in=0; in<128; in++)
+			System.out.print(c++ + " ");
+		System.out.println("\n================");
 		//Non-primitive data types - such as String, Arrays and Classes
 		String txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 		System.out.println("The length of the txt string is: " + txt.length());
