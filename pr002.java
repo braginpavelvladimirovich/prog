@@ -46,10 +46,22 @@ class pr002 {
 		*/
 		//operator for ( initialize; usloviea; changes )
 		for(int a=0, b=10; a<b; a++, b--)
-			System.out.println("i & j: " + a + " " + b);
-		for(int a=0; a<10;) {
-			System.out.println("a is: " + a);
+			System.out.println("\ti & j: " + a + " " + b);
+		for(int a=2147483646; a<2147483647;) {
+			System.out.println("\ta is: " + a);
 			a++;
 		}
+		//endless for(;;);
+		int sum=0;
+		for(int a=1; a<=5; sum += a++);
+		System.out.println("\n\tsumma = " + sum);
+		//while
+		System.out.println("\n\twhile");
+		char c='А';
+		while(c <= 'я') {
+			System.out.print(" " + c);
+			c++;
+		}
+		System.out.println("\n\t" + (int) 'ё' + "\t" + (int) 'Ё');
 	}
 }	
