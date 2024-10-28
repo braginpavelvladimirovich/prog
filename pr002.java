@@ -1,6 +1,7 @@
 class pr002 {
 	public static void main(String args[])
 		throws java.io.IOException {
+		/*
 		System.out.println("start there");
 		int i = 10, j = 20;
 		char c = 0, answer = 'R';
@@ -42,8 +43,13 @@ class pr002 {
 		else
 			System.out.println("bool is false");
 		System.out.println("\n");
+		*/
 		//operator for ( initialize; usloviea; changes )
 		for(int a=0, b=10; a<b; a++, b--)
 			System.out.println("i & j: " + a + " " + b);
+		for(int a=0; a<10;) {
+			System.out.println("a is: " + a);
+			a++;
+		}
 	}
 }	
