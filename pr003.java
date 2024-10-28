@@ -1,12 +1,18 @@
 class pr003 {
 	public static void main(String[] args)
 		throws java.io.IOException {
-		char c;
+		char c, cc;
 		System.out.println("info about operators");
-		System.out.println(" 1. if");
-		System.out.println(" 2. switch");
+		System.out.println("\t1. if");
+		System.out.println("\t2. switch");
+		System.out.println("\t3. for");
+		System.out.println("\t4. while");
+		System.out.println("\t5. do while");
 		System.out.println("enter number: ");
 		c = (char) System.in.read();
+		do {
+			cc = (char) System.in.read();
+		} while(cc != '\n');
 		System.out.println("\n");
 		switch (c) {
 			case '1':
@@ -22,6 +28,22 @@ class pr003 {
 				System.out.println("\t\t\tbreak;");
 				System.out.println("\t\t// ...");
 				System.out.println("\t}");
+				break;
+			case '3':
+				System.out.println("\toperator cycle \"for\":");
+				System.out.println("\tfpr(initialization;condition;action");
+				System.out.println("\t\toperator; or {block opertors}");
+				break;
+			case '4':
+				System.out.println("\toperator cycle \"while\":");
+				System.out.println("\twhile(condition) { operators}");
+				break;
+			case '5':
+				System.out.println("\toperator cycle \"do while\":");
+				System.out.println("\tdo {");
+				System.out.println("\t\toperators");
+				System.out.println("\t} while(condition)");
+				System.out.println("\tdo\n\tdo hast\n\tdo hast mich\n\tdo hast mich gefraht\n\tdo hast mich gefraht und ich hab nich gesaht");
 				break;
 			default:
 				System.out.println("\terror");
