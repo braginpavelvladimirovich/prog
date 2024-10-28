@@ -1,7 +1,12 @@
 class automobile {
-	int passagers;
+	double passagers;
 	double fuelTank;
 	double fuelConsuption;
+	automobile(double passagersDefault, double fuelTankDefault, double fuelConsuptionDefault) {
+		passagers = passagersDefault;
+		fuelTank = fuelTankDefault;
+		fuelConsuption = fuelConsuptionDefault;
+	}
 	void fuelEconomy() {
 		System.out.println("\t\tfuelEconomy:\t" + fuelTank/fuelConsuption);
 	}
@@ -14,14 +19,18 @@ class automobile {
 }
 class pr004 {
 	public static void main(String[] args) {
-		automobile car = new automobile();
+		automobile car = new automobile(4,65536,128);
+		/*
 		car.passagers = 4;
 		car.fuelTank = 65536;
 		car.fuelConsuption = 128.0;
-		automobile carPrototype = new automobile();
+		*/
+		automobile carPrototype = new automobile(8,32768,1024);
+		/*
 		carPrototype.passagers = 8;
 		carPrototype.fuelTank = 32768;
 		carPrototype.fuelConsuption = 1024.0;
+		*/
 		System.out.println("\tparameters car:\t" + car);
 		System.out.println("\t\tpassagers:\t" + car.passagers);
 		System.out.println("\t\tfuelTank:\t" + car.fuelTank);
