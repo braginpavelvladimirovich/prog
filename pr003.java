@@ -1,26 +1,6 @@
-class pr003 {
-	public static void main(String[] args)
-		throws java.io.IOException {
-		char c, cc;
-		for(;;) {
-			do {
-		System.out.println("info about operators");
-		System.out.println("\t1. if");
-		System.out.println("\t2. switch");
-		System.out.println("\t3. for");
-		System.out.println("\t4. while");
-		System.out.println("\t5. do while");
-		System.out.println("\t6. break");
-		System.out.println("\t7. continue");
-		System.out.println("enter number or q for quit: ");
-		c = (char) System.in.read();
-		do {
-			cc = (char) System.in.read();
-		} while(cc != '\n');
-			} while(c < 1 | c > '7' & c != 'q'); 
-			if(c=='q') break;
-		System.out.println("\n");
-		switch (c) {
+class f {
+	void select(int i) {
+		switch (i) {
 			case '1':
 				System.out.println("\topertor \"if\":\n");
 				System.out.println("\tif operator; or {block operators}");
@@ -61,6 +41,43 @@ class pr003 {
 				System.out.println("\terror");
 				break;
 		}
+		System.out.println("\t");
 	}
+	void menu() {
+		System.out.println("info about operators");
+		System.out.println("\t1. if");
+		System.out.println("\t2. switch");
+		System.out.println("\t3. for");
+		System.out.println("\t4. while");
+		System.out.println("\t5. do while");
+		System.out.println("\t6. break");
+		System.out.println("\t7.continue");
+		System.out.println("enter number or q for quit: ");
+	}
+	boolean v(int c) {
+		if(c < 1 | c > '7' & c != 'q')
+			return false;
+		else
+			return true;
+	}
+}
+class pr003 {
+	public static void main(String[] args)
+		throws java.io.IOException {
+		char c, cc;
+		f select = new f();
+		for(;;) {
+			do {
+				select.menu();
+				c = (char) System.in.read();
+				do {
+					cc = (char) System.in.read();
+				} while (cc != '\n');
+			if (c == 'q') break;
+			System.out.println("\t\n");
+			} while(!select.v(c));
+
+
+		}
 	}
 }
