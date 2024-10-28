@@ -43,7 +43,7 @@ class pr003 {
 				System.out.println("\tdo {");
 				System.out.println("\t\toperators");
 				System.out.println("\t} while(condition)");
-				System.out.println("\tdo\n\tdo hast\n\tdo hast mich\n\tdo hast mich gefraht\n\tdo hast mich gefraht und ich hab nich gesaht");
+				System.out.println("\tdo\n\tdo hast\n\tdo hast mich\n\tdo hast mich gefraht\n\tdo hast mich gefraht und ich hab nich gesaht\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 				break;
 			default:
 				System.out.println("\terror");

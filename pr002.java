@@ -47,7 +47,6 @@ class pr002 {
 		else
 			System.out.println("bool is false");
 		System.out.println("\n");
-		*/
 		//operator for ( initialize; usloviea; changes )
 		for(int a=0, b=10; a<b; a++, b--)
 			System.out.println("\ti & j: " + a + " " + b);
@@ -73,5 +72,66 @@ class pr002 {
 			c = (char) System.in.read();
 		} while(c != 'q');
 		f();
+		*/
+		for(int a=0; a<2147483647; a++) {
+			System.out.println("\tvalue a:\t" + a);
+			if (a == 1)
+				break;
+			System.out.println("\tnext iteration");
+		}
+		System.out.println("\t");
+		//insert cycle in break
+		for(int i=0; i<3; i++) {
+			System.out.println("\n\touter cycle:\t" + i);
+			System.out.print("\tinner cycle:\t");
+			int j = 0;
+			while(j<128) {
+				if(j==16)
+					break;
+				System.out.print("\t" + j);
+				j++;
+			}
+		}
+		System.out.println("\t");
+		int ii;
+		for(ii=1; ii<4; ii++) {
+one:{
+two:{
+three:{
+	      System.out.println("\tii =\t" + ii);
+	      if(ii==1) break one;
+	      if(ii==2) break two;
+	      if(ii==3) break three;
+	      System.out.println("\tbreak");
+}
+System.out.println("\tthree end");}
+System.out.println("\ttwo end");}
+System.out.println("\tone end");
+		}
+System.out.println("\tfor end");
+		//break label
+		System.out.println("\t");
+done:
+		for(int i=0; i<2147483647; i++) {
+			for(int j=0; j<2147483647; j++) {
+				for(int k=0; k<2147483647; k++) {
+					System.out.println("\t"+ k);
+					if(k==8) break done;
+				}
+				System.out.println("\tend k");
+			}
+			System.out.println("\tend j");
+		}
+	System.out.println("\tend i");
+	//operator cntinue
+value:
+	for(int i=0; i<=65536; i++) {
+		if((i%2) != 0)
+			continue value;
+		System.out.println("\t" + i);
+	}
+	System.out.println("\t2+2=" + 2+2);
+	System.out.println("\t2*2=" + 2*2);
+	System.out.println("\t\n\n\n\n\n\n\n\n\n\n\n\n");
 	}
 }	
