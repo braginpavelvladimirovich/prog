@@ -73,11 +73,10 @@ class pr003 {
 				do {
 					cc = (char) System.in.read();
 				} while (cc != '\n');
-			if (c == 'q') break;
-			System.out.println("\t\n");
 			} while(!select.v(c));
-
-
+		if (c == 'q') break;
+		System.out.println("\t\n");
+		select.v(c);
 		}
 	}
 }
