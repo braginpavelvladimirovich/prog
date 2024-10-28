@@ -76,7 +76,7 @@ class pr003 {
 			} while(!select.v(c));
 		if (c == 'q') break;
 		System.out.println("\t\n");
-		select.v(c);
+		select.select(c);
 		}
 	}
 }
