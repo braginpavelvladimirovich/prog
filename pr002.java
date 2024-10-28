@@ -1,4 +1,8 @@
 class pr002 {
+	static int f() {
+		System.out.println("call funk");
+		return 0;
+	}
 	public static void main(String args[])
 		throws java.io.IOException {
 		/*
@@ -47,7 +51,7 @@ class pr002 {
 		//operator for ( initialize; usloviea; changes )
 		for(int a=0, b=10; a<b; a++, b--)
 			System.out.println("\ti & j: " + a + " " + b);
-		for(int a=2147483646; a<2147483647;) {
+		for(int a=0; a<32768;) {
 			System.out.println("\ta is: " + a);
 			a++;
 		}
@@ -62,6 +66,12 @@ class pr002 {
 			System.out.print(" " + c);
 			c++;
 		}
-		System.out.println("\n\t" + (int) 'ё' + "\t" + (int) 'Ё');
+		System.out.println("\n\tyo: " + (int) 'ё' + "\tYO: " + (int) 'Ё');
+		//do while
+		do {
+			System.out.println("\n\tEnter symbol");
+			c = (char) System.in.read();
+		} while(c != 'q');
+		f();
 	}
 }	
