@@ -41,5 +41,9 @@ class pr002 {
 			System.out.println("bool is true");
 		else
 			System.out.println("bool is false");
+		System.out.println("\n");
+		//operator for ( initialize; usloviea; changes )
+		for(int a=0, b=10; a<b; a++, b--)
+			System.out.println("i & j: " + a + " " + b);
 	}
 }	
