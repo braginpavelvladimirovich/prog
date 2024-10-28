@@ -10,21 +10,21 @@ class pr003 {
 		System.out.println("\n");
 		switch (c) {
 			case '1':
-				System.out.println("opertor \"if\":\n");
-				System.out.println("if operator; or {block operators}");
-				System.out.println("else operator; or {block operators}");
+				System.out.println("\topertor \"if\":\n");
+				System.out.println("\tif operator; or {block operators}");
+				System.out.println("\telse operator; or {block operators}");
 				break;
 			case '2':
-				System.out.println("opertor \"switch\":\n");
-				System.out.println("switch operator {");
-				System.out.println(" case \"constant\"");
-				System.out.println("  operators");
-				System.out.println("  break;");
-				System.out.println(" // ...");
-				System.out.println("}");
+				System.out.println("\topertor \"switch\":\n");
+				System.out.println("\tswitch operator {");
+				System.out.println("\t\tcase \"constant\"");
+				System.out.println("\t\t\toperators");
+				System.out.println("\t\t\tbreak;");
+				System.out.println("\t\t// ...");
+				System.out.println("\t}");
 				break;
 			default:
-				System.out.println("error");
+				System.out.println("\terror");
 				break;
 		}
 	}
