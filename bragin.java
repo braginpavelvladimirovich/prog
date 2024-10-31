@@ -4,20 +4,20 @@ class bragin {
 		System.out.println("================================================================================================================================");
 		System.out.println("|\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        |");
 		System.out.println("|\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        |");
-		long k = 9223372036854775807L;
-		long l = -9223372036854775808L;
-		int i = 2147483647;
-		int j = -2147483648;
-		short s = 32767;
+		long k = 0x7fffffffffffffffL;//9223372036854775807L;
+		long l = 0x8000000000000000L;//-9223372036854775808L;
+		int i = 0x7fffffff;//2147483647;
+		int j = 0x80000000;//-2147483648;
+		short s = 0x7fff;//32767;
 		short h = -32768;
-		byte a = 127;
+		byte a = 0x7f;//127;
 		byte b = -128;
 		double d1 = Double.longBitsToDouble(0x7fefffffffffffffL);//double null Double.longBitsToDouble(0x0000000000000000)
 		double d2 = Double.longBitsToDouble(0xffefffffffffffffL);
 		float f1 = Float.intBitsToFloat(0x7f7fffff);//float null Float.intBitsToFloat(0x00000000)
 		float f2 = Float.intBitsToFloat(0xff7fffff);
-		char c1 = 0;
-		char c2 = 65535;
+		char c1 = 0x0000;
+		char c2 = 0xffff;//65535;
 		boolean b1 = true;
 		boolean b2 = false;
 		System.out.println("|\tLong int 64 bit number between:\t\t" + k + "\tand\t" + l + "\t\t\t        |");
