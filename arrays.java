@@ -156,9 +156,9 @@ class arrays {
 	System.out.println("\n\tEND FUNCTION\n");
 	int[] nums5 = {0,1,2,3,4,7,8,9};
 	int sun = 0;
-	for(int x : nums) {
-		System.out.println("value x:\t" + x);
-		sum += x;
+	for(int x1 : nums) {
+		System.out.println("value x:\t" + x1);
+		sum += x1;
 	}
 	System.out.println("\n\tsum of elements\t" + sum);
 	System.out.println("\n\tEND FUNCTION\n");
