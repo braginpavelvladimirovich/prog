@@ -137,6 +137,23 @@ class arrays {
 		System.out.print(nums2[i] + "\t");
 	System.out.println();
 	System.out.println("\n\tEND FUNCTION\n");
+	//peremennaya ekzemplyara length
+	int[] list = new int[10];
+	int[] nums4 = {1,2,3};
+	int[][] table1 = {
+		{7,8,9},
+		{5,6},
+		{1,2,3,4},
+		{0}
+	};
+	System.out.println("\n\tlength list:\t" + list.length);
+	System.out.println("\n\tlength table1:\t" + table1.length);
+	System.out.println("\n\tlength table1[0]:\t" + table1[0].length);
+	System.out.println("\n\tlength table1[1]:\t" + table1[1].length);
+	System.out.println("\n\tlength table1[2]:\t" + table1[2].length);
+	System.out.println("\n\tlength table1[3]:\t" + table1[3].length);
+	System.out.println("\n\tlength nums4:\t" + nums4.length);
+	System.out.println("\n\tEND FUNCTION\n");
 	System.out.println("\n\tEND\n");
 	}
 }
