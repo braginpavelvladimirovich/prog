@@ -154,13 +154,29 @@ class arrays {
 	System.out.println("\n\tlength table1[3]:\t" + table1[3].length);
 	System.out.println("\n\tlength nums4:\t" + nums4.length);
 	System.out.println("\n\tEND FUNCTION\n");
-	int[] nums5 = {0,1,2,3,4,7,8,9};
-	int sun = 0;
-	for(int x1 : nums) {
-		System.out.println("value x:\t" + x1);
+	int[] nums5 = {0,1,2,3,4,5,6,7,8,9};
+	int sum = 0;
+	for(int x1 : nums5) {
+		System.out.println("\tvalue x:\t" + x1);
 		sum += x1;
+		if(x1 == 5)
+			break;
 	}
 	System.out.println("\n\tsum of elements\t" + sum);
+	System.out.println("\n\tEND FUNCTION\n");
+	//sum in 2 dimesion array
+	int sum1 =0;
+	int[][] nums6 = new int[999][999];
+	for(int i = 0; i<nums6.length; i++)
+		for(int j1 = 0; j1<nums6[i].length;j1++)
+			nums6[i][j1] = (i+1)*(j1+1);
+	//print
+	for(int[] x1 : nums6)
+		for(int y :x1) {
+			System.out.println("\tvalue:\t" + y);
+			sum1 += y;
+		}
+	System.out.println("\tsum is:\t" + sum1);
 	System.out.println("\n\tEND FUNCTION\n");
 	System.out.println("\n\tEND\n");
 	}
