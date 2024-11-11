@@ -108,7 +108,7 @@ class arrays {
 	//alt int x[]= new x[]
 	//link to array
 	int[] nums2 = new int[10];
-	int[] nums3 = new int[10];
+	int[] nums3 = new int[11];
 	for (int i = 0; i < 10; i++){
 		nums2[i] = i;
 		nums3[i] = -i;
