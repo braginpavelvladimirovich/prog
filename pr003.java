@@ -51,7 +51,7 @@ class f {
 		System.out.println("\t4. while");
 		System.out.println("\t5. do while");
 		System.out.println("\t6. break");
-		System.out.println("\t7.continue");
+		System.out.println("\t7. continue");
 		System.out.println("enter number or q for quit: ");
 	}
 	boolean v(int c) {
@@ -64,6 +64,7 @@ class f {
 class pr003 {
 	public static void main(String[] args)
 		throws java.io.IOException {
+		System.out.println("\n\t THIS IS HELP FILE !!!\n");
 		char c, cc;
 		f select = new f();
 		for(;;) {

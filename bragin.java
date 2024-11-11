@@ -1,7 +1,7 @@
 class bragin {
 	public static void main(String args[]) {
 		System.out.println("\n<\t<\t<\t<\tB R A G I N\t>\t>\t>\t>\t\n");
-		System.out.println("================================================================================================================================");
+		System.out.println("#==============================================================================================================================#");
 		System.out.println("|\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        |");
 		System.out.println("|\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        |");
 		long k = 0x7fffffffffffffffL;//9223372036854775807L;
@@ -44,7 +44,28 @@ class bragin {
 		System.out.println("|\tBoolean 1 bit value between:\t\t" + b1 + "\tand\t" + b2 + "\t\t\t\t\t\t\t        |");
 		System.out.println("|\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        |");
 		System.out.println("|\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        |");
-		System.out.println("================================================================================================================================");
+		System.out.println("#==============================================================================================================================#");
 		System.out.println("\n<\t<\t<\t<\tE N D\t>\t>\t>\t>\t\n");
+		System.out.printf("\n\n\t%f\n\n",f1);
+		System.out.printf("\n\n\t%f\n\n",f2);
+		System.out.printf("\n\n\t%f\n\n",d1);
+		System.out.printf("\n\n\t%f\n\n",d2);
+		/*
+		for (int z=32; z<127; z++)
+			System.out.print(" " + (char)z);
+		System.out.println("\n");
+		System.out.println("\n");
+		System.out.println("\t1 2 3 4 5 6 7 8 1 2 3 4 5 6 7 8 1 2 3 4 5 6 7 8 1 2 3 4 5 6 7 8");
+		System.out.println("\t! \" # % $ & ' ( ) * + , - . / : ; < = > ? @ [ \\ ] ^ _ ` { | } ~");
+		//System.out.printf("# $ %");
+		//System.out.printf("	, - . / : ; < = > ? @ [ \\ ] ^ _ ` { | } ~");
+		System.out.println("\n");
+		System.out.println("\t0 1 2 3 4 5 6 7 8 9");
+		System.out.println("\n");
+		System.out.println("\tA B C D E F G H I J K L M N O P Q R S T U V W X Y Z");
+		System.out.println("\n");
+		System.out.println("\ta b c d e f g h i j k l m n o p q r s t u v w x y z");
+		System.out.println("\n");
+		*/
 	}
 }
