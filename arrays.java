@@ -121,6 +121,21 @@ class arrays {
 	for (int i = 0; i < 10; i++)
 		System.out.print(nums3[i] + "\t");
 	System.out.println();
+	nums2[3] = 99;
+	System.out.println("\n\tchanged numbers 2\n");
+	for (int i = 0; i < 10; i++)
+		System.out.print(nums2[i] + "\t");
+	System.out.println();
+	System.out.println("\n\tnumbers 3\n");
+	for (int i = 0; i < 10; i++)
+		System.out.print(nums3[i] + "\t");
+	System.out.println();
+	nums3=nums2;
+	nums3[3]=-88;
+	System.out.println("\n\tlink numbers 2| nums2 and nums3 is one array\n");
+	for (int i = 0; i < 10; i++)
+		System.out.print(nums2[i] + "\t");
+	System.out.println();
 	System.out.println("\n\tEND FUNCTION\n");
 	System.out.println("\n\tEND\n");
 	}
