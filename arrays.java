@@ -105,7 +105,23 @@ class arrays {
 	}
 	System.out.println("\n\tEND FUNCTION\n");
 	//declarations int[] x= new x[]
-	//alt int x[]= new x[]`
+	//alt int x[]= new x[]
+	//link to array
+	int[] nums2 = new int[10];
+	int[] nums3 = new int[10];
+	for (int i = 0; i < 10; i++){
+		nums2[i] = i;
+		nums3[i] = -i;
+	}
+	System.out.println("\n\tnumbers 2\n");
+	for (int i = 0; i < 10; i++)
+		System.out.print(nums2[i] + "\t");
+	System.out.println();
+	System.out.println("\n\tnumbers 3\n");
+	for (int i = 0; i < 10; i++)
+		System.out.print(nums3[i] + "\t");
+	System.out.println();
+	System.out.println("\n\tEND FUNCTION\n");
 	System.out.println("\n\tEND\n");
 	}
 }
