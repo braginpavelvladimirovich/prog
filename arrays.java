@@ -166,7 +166,7 @@ class arrays {
 	System.out.println("\n\tEND FUNCTION\n");
 	//sum in 2 dimesion array
 	int sum1 =0;
-	int[][] nums6 = new int[999][999];
+	int[][] nums6 = new int[99][99];
 	for(int i = 0; i<nums6.length; i++)
 		for(int j1 = 0; j1<nums6[i].length;j1++)
 			nums6[i][j1] = (i+1)*(j1+1);
@@ -177,6 +177,19 @@ class arrays {
 			sum1 += y;
 		}
 	System.out.println("\tsum is:\t" + sum1);
+	System.out.println("\n\tEND FUNCTION\n");
+	//finder
+	int val = 19;
+	boolean found = false;
+	for(int x1 : nums5)
+		if(x1 == val) {
+			found = true;
+			break;
+		}
+	if(found)
+		System.out.println("\n\tvalue:\t" + val + "\tfounded");
+	else
+		System.out.println("\n\tvalue:\t" + val + "\tnot founded");
 	System.out.println("\n\tEND FUNCTION\n");
 	System.out.println("\n\tEND\n");
 	}
