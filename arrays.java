@@ -24,7 +24,7 @@ class arrays {
 	nums[9] = -1;
 	int min, max;
 	min = max = nums[0];
-	for (int i = 0; i < 10; i++) {
+	for (int i = 0; i < nums.length; i++) {
 		if(nums[i] < min) min = nums[i];
 		if(nums[i] > max) max = nums[i];
 	}
@@ -34,10 +34,10 @@ class arrays {
 	max = min = 0;
 	int x = 10;
 	int[] nums1 = {0,1,2,3,4,5,6,7,8,9};
-	for (int i = 0; i < 10; i++)
+	for (int i = 0; i < nums1.length; i++)
 		System.out.println("\tarray number in [" + i + "]:" + nums1[i]);
 	System.out.println("\n\tEND FUNCTION\n");
-	for (int i = 0; i < 10; i++) {
+	for (int i = 0; i < nums1.length; i++) {
 		if(nums1[i] < min) min = nums1[i];
 		if(nums1[i] > max) max = nums1[i];
 	}
@@ -46,8 +46,8 @@ class arrays {
 	//double arrays
 	int t,j;
 	int[][] table = new int [3][4];
-	for(t=0;t<3;t++) {
-		for(j=0;j<4;j++) {
+	for(t=0;t<table.length;t++) {
+		for(j=0;j<table[t].length;j++) {
 			table[t][j] = (t*4) + j + 1;
 			System.out.print(table[t][j] + "\t");
 		}
@@ -97,8 +97,8 @@ class arrays {
 		{10,100}
 	};
 	System.out.println("\n\tsquare array\n");
-	for(t=0;t<10;t++) {
-		for(j=0;j<2;j++) {
+	for(t=0;t<sqrs.length;t++) {
+		for(j=0;j<sqrs[t].length;j++) {
 			System.out.print(sqrs[t][j] + "\t");
 		}
 		System.out.println();
@@ -114,26 +114,26 @@ class arrays {
 		nums3[i] = -i;
 	}
 	System.out.println("\n\tnumbers 2\n");
-	for (int i = 0; i < 10; i++)
+	for (int i = 0; i < nums2.length; i++)
 		System.out.print(nums2[i] + "\t");
 	System.out.println();
 	System.out.println("\n\tnumbers 3\n");
-	for (int i = 0; i < 10; i++)
+	for (int i = 0; i < nums3.length; i++)
 		System.out.print(nums3[i] + "\t");
 	System.out.println();
 	nums2[3] = 99;
 	System.out.println("\n\tchanged numbers 2\n");
-	for (int i = 0; i < 10; i++)
+	for (int i = 0; i < nums2.length; i++)
 		System.out.print(nums2[i] + "\t");
 	System.out.println();
 	System.out.println("\n\tnumbers 3\n");
-	for (int i = 0; i < 10; i++)
+	for (int i = 0; i < nums3.length; i++)
 		System.out.print(nums3[i] + "\t");
 	System.out.println();
 	nums3=nums2;
 	nums3[3]=-88;
 	System.out.println("\n\tlink numbers 2| nums2 and nums3 is one array\n");
-	for (int i = 0; i < 10; i++)
+	for (int i = 0; i < nums2.length; i++)
 		System.out.print(nums2[i] + "\t");
 	System.out.println();
 	System.out.println("\n\tEND FUNCTION\n");
