@@ -154,6 +154,14 @@ class arrays {
 	System.out.println("\n\tlength table1[3]:\t" + table1[3].length);
 	System.out.println("\n\tlength nums4:\t" + nums4.length);
 	System.out.println("\n\tEND FUNCTION\n");
+	int[] nums5 = {0,1,2,3,4,7,8,9};
+	int sun = 0;
+	for(int x : nums) {
+		System.out.println("value x:\t" + x);
+		sum += x;
+	}
+	System.out.println("\n\tsum of elements\t" + sum);
+	System.out.println("\n\tEND FUNCTION\n");
 	System.out.println("\n\tEND\n");
 	}
 }
