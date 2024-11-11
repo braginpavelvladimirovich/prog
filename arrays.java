@@ -23,8 +23,8 @@ class arrays {
 	int min, max;
 	min = max = nums[0];
 	for (int i = 0; i < 10; i++) {
-		if(nums[i] < min) min = nums[i];
-		if(nums[i] < max) max = nums[i];
+		if(nums1[i] < min) min = nums1[i];
+		if(nums1[i] < max) max = nums1[i];
 	}
 	System.out.println("\n\tMinimun is:\t" + min + "\n\tMaximum is:\t" + max);
 	System.out.println("\n\tEND FUNCTION\n");
