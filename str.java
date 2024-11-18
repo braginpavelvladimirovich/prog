@@ -46,6 +46,16 @@ class str {
 		System.out.println("\n\tPrint str1-3 index:\t" + str1.lastIndexOf(str3));
 		System.out.println("\n\tPrint str2-3 index:\t" + str2.lastIndexOf(str3));
 		System.out.println("\n\tFunction stopped\n");
+		//7. string array
+		String[] str0 = {str1,str2,str3};
+		System.out.println("\n\tstring array:\t" + str0 + "\n\t");
+		for(String s :str0)
+			System.out.print(" " + s);
+		System.out.println("\n\tFunction stopped\n");
+		//8. create understring
+		String sub = str1.substring(5,8);
+		System.out.println("\n\tsubstring:\t" + sub);
+		System.out.println("\n\tFunction stopped\n");
 		System.out.println("\n\tEND\n");
 	}
 }
