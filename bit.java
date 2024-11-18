@@ -1,4 +1,28 @@
 import java.util.Random;
+class ShowBits {
+	int numbits;
+	ShowBits(int n) {
+		numbits = n;
+	}
+	void show(long val) {
+		long mask = 1;
+		//mov left 1
+		mask <<= numbits-1;
+		int spacer = 0;
+		for(;mask !=0; mask >>>= 1) {
+			if((val & mask) !=0) 
+				System.out.print("1");
+			else
+				System.out.print("0");
+			spacer++;
+			if((spacer % 8) == 0) {
+				System.out.print(" ");
+				spacer =0;
+			}
+		}
+		System.out.println();
+	}
+}
 class bit {
 	public static void main(String[] args) {
 		System.out.println("\n\tSTART\n");
@@ -97,6 +121,17 @@ class bit {
 			val2 = val2 >> 1;
 		}
 		System.out.println("\n\tFunction stopped\n");
+		//System.out.println("\n\tShowBits\n" + ShowBits(val2));
+		ShowBits b3 = new ShowBits(8);
+		ShowBits i3 = new ShowBits(32);
+		ShowBits l3 = new ShowBits(64);
+		System.out.println("\n\tbyte:\t");
+		b3.show(255);
+		System.out.println("\n\tint:\t");
+		i3.show(4294967295l);
+		System.out.println("\n\tlong:\t");
+		l3.show(9223372036854775807l);
+		l3.show(-1);
 		System.out.println("\n\tFunction stopped\n");
 		System.out.println("\n\tEND\n");
 	}
