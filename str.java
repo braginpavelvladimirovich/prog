@@ -28,6 +28,24 @@ class str {
 		for(int i=0; i<str1.length();i++)
 			System.out.println(str1.charAt(i));
 		System.out.println("\n\tFunction stopped\n");
+		//4. equals strings numbers differencei
+		System.out.println("\n\tEquals str1 and str2:\t" + str1.compareTo(str2));
+		System.out.println("\n\tEquals str1 and str1:\t" + str1.compareTo(str3));
+		System.out.println("\n\tFunction stopped\n");
+		//5. first index
+		System.out.println("\n\tPrint str1 index:\t" + str1.indexOf(str1));
+		System.out.println("\n\tPrint str2 index:\t" + str1.indexOf(str2));
+		System.out.println("\n\tPrint str3 index:\t" + str1.indexOf(str3));
+		System.out.println("\n\tFunction stopped\n");
+		//6. search index
+		str1 = "minecraft use java";
+		str2 = "java";
+		str3 = "e";
+		System.out.println("\n\tPrint str1-1 index:\t" + str1.lastIndexOf(str1));
+		System.out.println("\n\tPrint str1-2 index:\t" + str1.lastIndexOf(str2));
+		System.out.println("\n\tPrint str1-3 index:\t" + str1.lastIndexOf(str3));
+		System.out.println("\n\tPrint str2-3 index:\t" + str2.lastIndexOf(str3));
+		System.out.println("\n\tFunction stopped\n");
 		System.out.println("\n\tEND\n");
 	}
 }
