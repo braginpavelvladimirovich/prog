@@ -75,9 +75,9 @@ class str {
 		System.out.println("\n\tFunction stopped\n");
 		//10. text block
 		String block = """
-			stange
+			\n\tstange
 			\tformat
-			string
+			\t"string"
 			""";
 		System.out.println("\n\tstring block:\t" + block);
 		System.out.println("\n\tFunction stopped\n");
