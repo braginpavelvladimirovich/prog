@@ -97,7 +97,7 @@ class str {
 		if(args.length !=1)
 			System.out.println("\n\thave args\n");
 		else {
-			for(int i2=0;i2<str4.length;i2++) {
+			for(i2=0;i2<str4.length;i2++) {
 				if(str4[i2][0].equals(args[0])) {
 					System.out.println(str4[i2][0]);
 				}
