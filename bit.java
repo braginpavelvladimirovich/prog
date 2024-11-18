@@ -134,9 +134,16 @@ class bit {
 		l3.show(-1);
 		System.out.println("\n\tFunction stopped\n");
 		int absval;
-		System.out.println("\n\tval:\t" + val);
+		val = -64;
 		absval = val < 0 ? -val : val;
-		System.out.println("\n\tval:\t" + val + absval);
+		System.out.println("\n\tval:\t" + val + " " + absval);
+		System.out.println("\n\tFunction stopped\n");
+		int res;
+		for(int i=-5;i<6;i++) {
+			res = i !=0 ? 100 / i : 0;
+			if(i !=0)
+				System.out.println("\n\t100 /" + i + " = " + res);
+		}
 		System.out.println("\n\tFunction stopped\n");
 		System.out.println("\n\tEND\n");
 	}
