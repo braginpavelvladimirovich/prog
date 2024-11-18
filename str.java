@@ -83,8 +83,28 @@ class str {
 		System.out.println("\n\tFunction stopped\n");
 		//11. args
 		System.out.println("\n\tArgs:\t" + args + args.length);
-		for(i=0;i<args.length;i++)
+		for(int i=0;i<args.length;i++)
 			System.out.println("\tArguments:\t" + args[i]);
+		System.out.println("\n\tFunction stopped\n");
+		//12. 2 dimesion array string
+		String[][] str4 = {
+			{"first","qwertyuiop"},
+			{"second","asdfghjkl"},
+			{"third","zxcvbnm"},
+			{"quatro","1234567890"}
+		};
+		int i;
+		if(args.length !=1)
+			System.out.println("\n\thave args\n");
+		else {
+			for(int i=0;i<str4.length;i++) {
+				if(str4[i][0].equals(args[0])) {
+					System.out.println(str4[i][0]);
+				}
+			}
+			if(i==str4.length)
+				System.out.println("\n\tnot found\n");
+		}
 		System.out.println("\n\tFunction stopped\n");
 		System.out.println("\n\tEND\n");
 	}
