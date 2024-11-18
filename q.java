@@ -54,5 +54,8 @@ class qdemo {
 		}
 		System.out.println("\n\tEND FUNCTION\n");
 		System.out.println("\n\tEND\n");
+		//try access to private value
+		//bigQ.q[3]=1;
+		//bigQ.putloc=1;
 	}
 }
