@@ -133,6 +133,11 @@ class bit {
 		l3.show(9223372036854775807l);
 		l3.show(-1);
 		System.out.println("\n\tFunction stopped\n");
+		int absval;
+		System.out.println("\n\tval:\t" + val);
+		absval = val < 0 ? -val : val;
+		System.out.println("\n\tval:\t" + val + absval);
+		System.out.println("\n\tFunction stopped\n");
 		System.out.println("\n\tEND\n");
 	}
 }
