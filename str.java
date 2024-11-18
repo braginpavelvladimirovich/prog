@@ -56,6 +56,23 @@ class str {
 		String sub = str1.substring(5,8);
 		System.out.println("\n\tsubstring:\t" + sub);
 		System.out.println("\n\tFunction stopped\n");
+		//9. control switch with string
+		String command ="cancel";
+		switch(command) {
+			case "connect":
+				System.out.println("\n\tconnect\n");
+				break;
+			case "disconnect":
+				System.out.println("\n\tdisconnect\n");
+				break;
+			case "cancel":
+				System.out.println("\n\tcancel\n");
+				break;
+			case default:
+				System.out.println("\n\tdefault\n");
+				break;
+		}
+		System.out.println("\n\tFunction stopped\n");
 		System.out.println("\n\tEND\n");
 	}
 }
