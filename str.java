@@ -68,7 +68,7 @@ class str {
 			case "cancel":
 				System.out.println("\n\tcancel\n");
 				break;
-			case default:
+			default:
 				System.out.println("\n\tdefault\n");
 				break;
 		}
