@@ -1,7 +1,7 @@
 //queue
 class q {
-	char[] c;
-	int putloc, getloc; //index rof move char
+	private char[] c;
+	private int putloc, getloc; //index rof move char
 	q(int size) {
 		c = new char[size]; //memory for q
 		putloc=getloc=0;
