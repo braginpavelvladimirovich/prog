@@ -81,6 +81,11 @@ class str {
 			""";
 		System.out.println("\n\tstring block:\t" + block);
 		System.out.println("\n\tFunction stopped\n");
+		//11. args
+		System.out.println("\n\tArgs:\t" + args + args.length);
+		for(i=0;i<args.length;i++)
+			System.out.println("\tArguments:\t" + args[i]);
+		System.out.println("\n\tFunction stopped\n");
 		System.out.println("\n\tEND\n");
 	}
 }
