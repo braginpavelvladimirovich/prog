@@ -76,7 +76,7 @@ class str {
 		//10. text block
 		String block = """
 			stange
-			format
+			\tformat
 			string
 			""";
 		System.out.println("\n\tstring block:\t" + block);
