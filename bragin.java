@@ -46,11 +46,12 @@ class bragin {
 		System.out.println("|\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        |");
 		System.out.println("#==============================================================================================================================#");
 		System.out.println("\n<\t<\t<\t<\tE N D\t>\t>\t>\t>\t\n");
+		System.out.printf("\n\n\t" + (1 + 1));
+		/*
 		System.out.printf("\n\n\t%f\n\n",f1);
 		System.out.printf("\n\n\t%f\n\n",f2);
 		System.out.printf("\n\n\t%f\n\n",d1);
 		System.out.printf("\n\n\t%f\n\n",d2);
-		/*
 		for (int z=32; z<127; z++)
 			System.out.print(" " + (char)z);
 		System.out.println("\n");
