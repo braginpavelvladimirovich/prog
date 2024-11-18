@@ -93,16 +93,16 @@ class str {
 			{"third","zxcvbnm"},
 			{"quatro","1234567890"}
 		};
-		int i;
+		int i2;
 		if(args.length !=1)
 			System.out.println("\n\thave args\n");
 		else {
-			for(int i=0;i<str4.length;i++) {
-				if(str4[i][0].equals(args[0])) {
-					System.out.println(str4[i][0]);
+			for(int i2=0;i2<str4.length;i2++) {
+				if(str4[i2][0].equals(args[0])) {
+					System.out.println(str4[i2][0]);
 				}
 			}
-			if(i==str4.length)
+			if(i2==str4.length)
 				System.out.println("\n\tnot found\n");
 		}
 		System.out.println("\n\tFunction stopped\n");
