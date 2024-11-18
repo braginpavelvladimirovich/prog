@@ -73,6 +73,14 @@ class str {
 				break;
 		}
 		System.out.println("\n\tFunction stopped\n");
+		//10. text block
+		String block = """
+			stange
+			format
+			string
+			""";
+		System.out.println("\n\tstring block:\t" + block);
+		System.out.println("\n\tFunction stopped\n");
 		System.out.println("\n\tEND\n");
 	}
 }
