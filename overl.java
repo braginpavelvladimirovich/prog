@@ -50,7 +50,7 @@ class su {
 			System.out.println(i);
 		}
 	}
-	au(su ob) {
+	su(su ob) {
 		sum = ob.sum;
 	}
 }
