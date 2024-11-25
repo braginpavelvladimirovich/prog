@@ -41,6 +41,19 @@ class overload {
 		System.out.println("\n\tf byte:\t" + x);
 	}
 }
+class su {
+	int sum;
+	su(int num) {
+		sum =0;
+		for (int i=1;i <=num;i++) {
+			sum+=i;
+			System.out.println(i);
+		}
+	}
+	au(su ob) {
+		sum = ob.sum;
+	}
+}
 class overl {
 	public static void main (String [] args) {
 		overload ob = new overload();
@@ -73,7 +86,10 @@ class overl {
 		System.out.println("\n\tobj\t" + t2.s);
 		System.out.println("\n\tobj\t" + t3.s);
 		System.out.println("\n\tobj\t" + t4.s);
-		
+		su s1 = new su(5);
+		su s2 =  new su(s1);
+		System.out.println("\n\tsum\t" + s1.sum);
+		System.out.println("\n\tsum\t" + s2.sum);
 		System.out.println("\n\tEND\n");
 	}
 }
