@@ -16,7 +16,7 @@ class overload {
 	}
 }
 class overl {
-	public static void main (Strint [] args) {
+	public static void main (String [] args) {
 		overload ob = new overload();
 		int i;
 		double d;
