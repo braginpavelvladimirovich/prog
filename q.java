@@ -6,6 +6,20 @@ class q {
 		c = new char[size]; //memory for q
 		putloc=getloc=0;
 	}
+	q(q ob) {
+		putloc = ob.putloc;
+		getloc = ob.getloc;
+		c = new char[ob.c.length];
+		for(int i=getloc; i<putloc; i++)
+			c[i]=ob.c[i];
+	}
+	q(char[] a) {
+		putloc = 0;
+		getloc = 0;
+		c = new char[a.length];
+		for(int i=0; i<a.length; i++)
+			put(a[i]);
+	}
 	//method for make char tu q
 	void put(char ch) {
 		if(putloc==c.length) {
@@ -51,6 +65,28 @@ class qdemo {
 			ch =smallq.get();
 			if(ch != (char) 0)
 				System.out.print("\t" + ch);
+		}
+		System.out.println("\n\tEND FUNCTION\n");
+		q q1 =new q(10);
+		char[] chars={'A','B','C'};
+		q q2 = new q(chars);
+		for(i =0;i<10;i++)
+			q1.put((char) ('D' +i));
+		q q3 = new q(q1);
+		System.out.println("\n\tqueue:\t");
+		for(i =0;i<10;i++){
+			ch = q1.get();
+			System.out.print(ch);
+		}
+		System.out.println("\n\tqueue:\t");
+		for(i =0;i<3;i++){
+			ch = q2.get();
+			System.out.print(ch);
+		}
+		System.out.println("\n\tqueue:\t");
+		for(i =0;i<10;i++){
+			ch = q3.get();
+			System.out.print(ch);
 		}
 		System.out.println("\n\tEND FUNCTION\n");
 		System.out.println("\n\tEND\n");
