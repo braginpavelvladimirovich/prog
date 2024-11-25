@@ -38,6 +38,43 @@ class byref {
 		ob.b = -ob.b;
 	}
 }
+class errormsg {
+	String[] msgs = {
+		"error print",
+		"error input",
+		"error disk",
+		"out of index"
+	};
+	String geterrormsg(int i){
+		if(i>=0 & i < msgs.length)
+			return msgs[i];
+		else
+			return "unclear";
+	}
+}
+class err {
+	String msg;
+	int sev;
+	err(String m,int s) {
+		msg = m;
+		sev = s;
+	}
+}
+class errorinfo {
+	String[] msgs = {
+		"error print",
+		"error input",
+		"error disk",
+		"out of index"
+	};
+	int[] howbad = {3,3,2,4};
+	err geterrorinfo(int i) {
+		if(i >= 0 & i <msgs.length)
+			return new err(msgs[i],howbad[i]);
+		else
+			return new err("unclear",0);
+	}
+}
 class pr000 {
 	public static void main(String[] args){
 		System.out.println("\n\tSTART\n");
@@ -46,7 +83,7 @@ class pr000 {
 		block ob3 = new block(5,4,5);
 		System.out.println("ob1 and ob2 equal:\t" + ob1.sameblock(ob2));
 		System.out.println("ob1 and ob3 equal:\t" + ob1.sameblock(ob3));
-		System.out.println("ob1 and ob2 value equal:\t" + ob1.samev(ob2));
+		System.out.println("ob1 and ob3 value equal:\t" + ob1.samev(ob3));
 		byvalue ob4 = new byvalue();
 		int a = 15, b =20;
 		System.out.println("before:\t" + a + "\t" + b);
@@ -56,6 +93,19 @@ class pr000 {
 		System.out.println("ob5 before:\t" + ob5.a + "\t" + ob5.b);
 		ob5.change(ob5);
 		System.out.println("ob5 change:\t" + ob5.a + "\t" + ob5.b);
+		System.out.println("\n\tEND FUNCTION\n");
+		//demo return string by method
+		errormsg err0 =new errormsg();
+		System.out.println(err0.geterrormsg(2));
+		System.out.println(err0.geterrormsg(-1));
+		System.out.println("\n\tEND FUNCTION\n");
+		//return obj
+		errorinfo err2 = new errorinfo();
+		err e;
+		e = err2.geterrorinfo(3);
+		System.out.println(e.msg + "\tseverity\t" + e.sev);
+		e = err2.geterrorinfo(-1);
+		System.out.println(e.msg + "\tseverity\t" + e.sev);
 		System.out.println("\n\tEND FUNCTION\n");
 		System.out.println("\n\tEND\n");
 	}
