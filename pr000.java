@@ -50,11 +50,11 @@ class pr000 {
 		byvalue ob4 = new byvalue();
 		int a = 15, b =20;
 		System.out.println("before:\t" + a + "\t" + b);
-		ob3.nochange(a,b);
+		ob4.nochange(a,b);
 		System.out.println("nochange:\t" + a + "\t" + b);
 		byref ob5 = new byref(15,20);
 		System.out.println("ob5 before:\t" + ob5.a + "\t" + ob5.b);
-		ob5.change(a,b);
+		ob5.change(ob5);
 		System.out.println("ob5 change:\t" + ob5.a + "\t" + ob5.b);
 		System.out.println("\n\tEND FUNCTION\n");
 		System.out.println("\n\tEND\n");
