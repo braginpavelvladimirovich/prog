@@ -30,6 +30,9 @@ class t extends tds {
 	void ss() {
 		System.out.println("\n\tstyle:\t" + st);
 	}
+	String ssn() {
+		return super.n;
+	}
 }
 class r extends tds {
 	String ol;
@@ -60,9 +63,11 @@ class i {
 		f1.sd();
 		System.out.println("t1:\t" + t1.n);
 		t1.ss();
+		t1.ssn();
 		System.out.println("area:\t" + t1.area());
 		System.out.println("t2:\t" + t2.n);
 		t2.ss();
+		t2.ssn();
 		System.out.println("area:\t" + t2.area());
 		System.out.println("r1:\t" + r1.n);
 		System.out.println("square?:\t" + r1.is());
