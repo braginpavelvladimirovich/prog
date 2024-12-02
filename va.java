@@ -9,6 +9,6 @@ class va {
 	public static void main(String[] args) {
 		vatest();
 		vatest(16);
-		vatest(1,2,4);
+		vatest(7,127,32767,2147483647);
 	}
 }
