@@ -1,6 +1,7 @@
 import java.util.Random;
 class bi2 {
 	public static void main(String[] args) {
+		System.out.println("\n\tSTART\n");
 //special
 class ShowBits {
 	int numbits;
@@ -26,9 +27,18 @@ class ShowBits {
 		System.out.println();
 	}
 }
+for(byte b =-128; b<=127; b++) {
+	ShowBits byteval = new ShowBits(8);
+	System.out.print("\t" + b + "\tbytes:\t");
+	byteval.show(b);
+	if(b==127)
+		break;
+}
+
 //special
 	}
 }
+/*
 class bi2 {
 	public static void main(String[] args) {
 		System.out.println("\n\tSTART\n");
@@ -154,3 +164,4 @@ class bi2 {
 		System.out.println("\n\tEND\n");
 	}
 }
+*/
