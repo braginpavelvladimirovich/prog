@@ -1,6 +1,6 @@
 class tds {
-	double width;
-	double height;
+	private double width;
+	private double height;
 	String n;
 	tds(double w, double h) {
 		width = w;
@@ -9,6 +9,12 @@ class tds {
 	}
 	void sd() {
 		System.out.println("\n\tdimesions:\t" + width + "\tx\t" + height);
+	}
+	double gw() {
+		return width;
+	}
+	double gh() {
+		return height;
 	}
 }
 class t extends tds {
@@ -19,7 +25,7 @@ class t extends tds {
 		n = "Triangle";
 	}
 	double area() {
-		return width * height / 2 ;
+		return gw() * gh() / 2 ;
 	}
 	void ss() {
 		System.out.println("\n\tstyle:\t" + st);
@@ -33,10 +39,10 @@ class r extends tds {
 		n = "Rectangle";
 	}
 	double area() {
-		return width * height ;
+		return gw() * gh() ;
 	}
 	boolean is() {
-		if (width==height)
+		if (gw()==gh())
 			return true;
 		else
 			return false;
@@ -64,6 +70,7 @@ class i {
 		System.out.println("r2:\t" + r2.n);
 		System.out.println("square?:\t" + r2.is());
 		System.out.println("area:\t" + r2.area());
-
+		//System.out.println(f1.width);
+		//System.out.println(t1.width);
 	}
 }
