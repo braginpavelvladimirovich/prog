@@ -88,10 +88,10 @@ class i {
 		f1.area();
 		f1 = t1;
 		System.out.println("\twidth:\t" + f1.gw());
-		f1.area();
+		System.out.println("\tarea:\t" + f1.area());
 		f1 = r1;
 		System.out.println("\twidth:\t" + f1.gw());
-		f1.area();
+		System.out.println("\tarea:\t" + f1.area());
 		System.out.println("\n\tEND\t\n");
 	}
 }
