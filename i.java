@@ -55,11 +55,9 @@ class r extends tds {
 		else
 			return false;
 	}
-	/*
 	void gmsg() {
 		System.out.println("\tmessage rectangle");
 	}
-	*/
 }
 class ct extends t {
 	String co;
@@ -71,9 +69,11 @@ class ct extends t {
 	void sc() {
 		System.out.println("\tCOLORE:\t" + co);
 	}
+	/*
 	void gmsg() {
 		System.out.println("\tmessage colored triangle");
 	}
+	*/
 }
 class i {
 	public static void main(String[] args) {
