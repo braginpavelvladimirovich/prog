@@ -106,10 +106,14 @@ class i {
 		System.out.println("\n\tSTOP FUNCTION\t\n");
 		f1 = t2;
 		t2.sc();
+		System.out.println("\tarea:\t" + f1.area());
 		System.out.println("\n\tSTOP FUNCTION\t\n");
 		System.out.println((int)0x7fffffff);
 		System.out.println(Float.intBitsToFloat(0x7f7fffff));
 		System.out.println((int)Float.intBitsToFloat(0x7f7fffff)==(int)0x7fffffff);
+		System.out.println((int)Float.intBitsToFloat(0xff7fffff)==(int)0x80000000);
+		System.out.println(Float.intBitsToFloat((int)0x7fffffff));
+		System.out.println(Float.intBitsToFloat((int)0x80000000));
 		System.out.println("\n\tSTOP FUNCTION\t\n");
 		System.out.println("\n\tEND\t\n");
 	}
