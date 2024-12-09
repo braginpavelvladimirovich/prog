@@ -35,7 +35,7 @@ class bragin {
 		System.out.println("|\tDouble 64 bit number between:\t\t" + d1 + "\tand\t" + d2 + "\t\t\t        |");
 		System.out.println("|\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        |");
 		System.out.println("|\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        |");
-		System.out.println("|\tFloat 32 bit number between:\t\t" + f1 + "\tand\t" + f2 + "\t\t\t\t\t        |");
+		System.out.println("|\tFloat 32 bit number between:\t\t" + (int)f1 + "\tand\t" + (int)f2 + "\t\t\t\t\t        |");
 		System.out.println("|\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        |");
 		System.out.println("|\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        |");
 		System.out.println("|\tChar int 16 bit number between:\t\t" + (int)c1 + "\tand\t" + (int)c2 + "\t\t\t\t\t\t\t        |");

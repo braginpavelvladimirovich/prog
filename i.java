@@ -16,6 +16,10 @@ class tds {
 	double gh() {
 		return height;
 	}
+	double area() {
+		System.out.println("\n\tmethod need to change\t");
+		return 0.0;
+	}
 }
 class t extends tds {
 	String st;
@@ -77,5 +81,10 @@ class i {
 		System.out.println("area:\t" + r2.area());
 		//System.out.println(f1.width);
 		//System.out.println(t1.width);
+		//vakue superclass can link on object any sublcass
+		f1 = t1;
+		System.out.println(f1.gw());
+		f1 = r1;
+		System.out.println(f1.gw());
 	}
 }
