@@ -104,6 +104,9 @@ class i {
 		System.out.println("\twidth:\t" + f1.gw());
 		System.out.println("\tarea:\t" + f1.area());
 		System.out.println("\n\tSTOP FUNCTION\t\n");
+		f1 = t2;
+		f1.sc();
+		System.out.println("\n\tSTOP FUNCTION\t\n");
 		System.out.println((int)0x7fffffff);
 		System.out.println(Float.intBitsToFloat(0x7f7fffff));
 		System.out.println((int)Float.intBitsToFloat(0x7f7fffff)==(int)0x7fffffff);
