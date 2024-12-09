@@ -62,13 +62,16 @@ class ct extends t {
 		co = c;
 		n = "COLORE";
 	}
+	void sc() {
+		System.out.println("\tCOLORE:\t" + co);
+	}
 }
 class i {
 	public static void main(String[] args) {
 		System.out.println("\n\tSTART\t\n");
 		tds f1 = new tds(20.0, 30.0);
 		t t1 = new t("\tasd\t",4.5,7.0);
-		t t2 = new t("\tcontur\t",3.5,8.0);
+		t t2 = new ct("\tRED\t","\tcontur\t",3.5,8.0);
 		r r1 = new r("\tline\t",5.0,5.0);
 		r r2 = new r("\tpunkt\t",5.0,7.0);
 		System.out.println("\tinfo:\t");
