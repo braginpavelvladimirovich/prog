@@ -58,30 +58,31 @@ class r extends tds {
 class i {
 	public static void main(String[] args) {
 		tds f1 = new tds(20.0, 30.0);
-		t t1 = new t("asd",4.5,7.0);
-		t t2 = new t("contur",3.5,8.0);
-		r r1 = new r("line",5.0,5.0);
-		r r2 = new r("punkt",5.0,7.0);
-		System.out.println("info:");
-		System.out.println("f1:\t" + f1.n);
+		t t1 = new t("\tasd\t",4.5,7.0);
+		t t2 = new t("\tcontur\t",3.5,8.0);
+		r r1 = new r("\tline\t",5.0,5.0);
+		r r2 = new r("\tpunkt\t",5.0,7.0);
+		System.out.println("\tinfo:\t");
+		System.out.println("\tf1:\t" + f1.n);
 		f1.sd();
-		System.out.println("t1:\t" + t1.n);
+		System.out.println("\tt1:\t" + t1.n);
 		t1.ss();
 		t1.ssn();
-		System.out.println("area:\t" + t1.area());
-		System.out.println("t2:\t" + t2.n);
+		System.out.println("\tarea:\t" + t1.area());
+		System.out.println("\tt2:\t" + t2.n);
 		t2.ss();
 		t2.ssn();
-		System.out.println("area:\t" + t2.area());
-		System.out.println("r1:\t" + r1.n);
-		System.out.println("square?:\t" + r1.is());
-		System.out.println("area:\t" + r1.area());
-		System.out.println("r2:\t" + r2.n);
-		System.out.println("square?:\t" + r2.is());
-		System.out.println("area:\t" + r2.area());
+		System.out.println("\tarea:\t" + t2.area());
+		System.out.println("\tr1:\t" + r1.n);
+		System.out.println("\tsquare?:\t" + r1.is());
+		System.out.println("\tarea:\t" + r1.area());
+		System.out.println("\tr2:\t" + r2.n);
+		System.out.println("\tsquare?:\t" + r2.is());
+		System.out.println("\tarea:\t" + r2.area());
 		//System.out.println(f1.width);
 		//System.out.println(t1.width);
 		//vakue superclass can link on object any sublcass
+		System.out.println(f1.gw());
 		f1 = t1;
 		System.out.println(f1.gw());
 		f1 = r1;
