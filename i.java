@@ -123,9 +123,10 @@ class i {
 		System.out.println("\tname:\t" + f1.n);
 		System.out.println("\n\tSTOP FUNCTION\t\n");
 		Object o1;
-		o1.getClass();
-		o1=t1;
-		o1.getClass();
+		System.out.println(t1.getClass());
+		System.out.println(t1.equals(t2));
+		System.out.println(t1.hashCode());
+		System.out.println(t1.toString());
 		System.out.println("\n\tSTOP FUNCTION\t\n");
 		System.out.println((int)0x7fffffff);
 		System.out.println(Float.intBitsToFloat(0x7f7fffff));
