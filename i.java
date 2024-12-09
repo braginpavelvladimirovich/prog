@@ -55,6 +55,14 @@ class r extends tds {
 			return false;
 	}
 }
+class ct extends t {
+	String co;
+	ct(String c, String s, double w, double h) {
+		super(s, w, h);
+		co = c;
+		n = "COLORE";
+	}
+}
 class i {
 	public static void main(String[] args) {
 		System.out.println("\n\tSTART\t\n");
