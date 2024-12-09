@@ -126,12 +126,12 @@ class i {
 		System.out.println(Float.intBitsToFloat(0x7f7fffff));
 		System.out.println((int)Float.intBitsToFloat(0x7f7fffff)==(int)0x7fffffff);
 		System.out.println((int)Float.intBitsToFloat(0xff7fffff)==(int)0x80000000);
-		System.out.println(Float.intBitsToFloat((int)0x7fffffff));
-		System.out.println(Float.intBitsToFloat((int)0x80000000));
+		System.out.println("\t7fffffff\t" + Float.intBitsToFloat((int)0x7fffffff));
+		System.out.println("\t80000000\t" + Float.intBitsToFloat((int)0x80000000));
 		System.out.println(Float.intBitsToFloat((int)0x7ffffffe));
 		System.out.println(Float.intBitsToFloat((int)0x80000001));
-		System.out.println(Float.intBitsToFloat((int)0x00000000));
-		System.out.println(Float.intBitsToFloat((int)0xffffffff));
+		System.out.println("\tMIN VALUE BIT\t" + Float.intBitsToFloat((int)0x00000000));
+		System.out.println("\tMAX VALUE BIT\t" + Float.intBitsToFloat((int)0xffffffff));
 		System.out.println("\n\tSTOP FUNCTION\t\n");
 		System.out.println("\n\tEND\t\n");
 	}
