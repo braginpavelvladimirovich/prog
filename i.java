@@ -1,4 +1,4 @@
-class tds {
+abstract class tds {
 	private double width;
 	private double height;
 	String n;
@@ -16,10 +16,7 @@ class tds {
 	double gh() {
 		return height;
 	}
-	double area() {
-		System.out.println("\n\tmethod need to change\t");
-		return 0.0;
-	}
+	abstract double area();
 }
 class t extends tds {
 	String st;
@@ -69,11 +66,12 @@ class ct extends t {
 class i {
 	public static void main(String[] args) {
 		System.out.println("\n\tSTART\t\n");
-		tds f1 = new tds(20.0, 30.0);
+		tds f1;// = new tds(20.0, 30.0);
 		t t1 = new t("\tasd\t",4.5,7.0);
 		ct t2 = new ct("\tRED\t","\tcontur\t",3.5,8.0);
 		r r1 = new r("\tline\t",5.0,5.0);
 		r r2 = new r("\tpunkt\t",5.0,7.0);
+		f1=t1;
 		System.out.println("\tinfo:\t");
 		System.out.println("\tf1:\t" + f1.n);
 		f1.sd();
