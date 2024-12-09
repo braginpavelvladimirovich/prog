@@ -1,4 +1,5 @@
 package bp;
+/*
 class b {
 	private String title;
 	private String author;
@@ -15,6 +16,7 @@ class b {
 		System.out.println();
 	}
 }
+*/
 class bd {
 	public static void main(String[] args) {
 		b[] bk = new b[4];
