@@ -34,6 +34,9 @@ class t extends tds {
 	String ssn() {
 		return super.n;
 	}
+	void gmsg("") {
+		System.out.println("\tmessage triangle");
+	}
 }
 class r extends tds {
 	String ol;
@@ -61,6 +64,9 @@ class ct extends t {
 	}
 	void sc() {
 		System.out.println("\tCOLORE:\t" + co);
+	}
+	void gmsg("") {
+		System.out.println("\tmessage colored triangle");
 	}
 }
 class i {
@@ -96,6 +102,7 @@ class i {
 		System.out.println("\twidth:\t" + f1.gw());
 		f1.area();
 		f1 = t1;
+		f1.gmsg();
 		System.out.println("\twidth:\t" + f1.gw());
 		System.out.println("\tarea:\t" + f1.area());
 		f1 = r1;
@@ -103,6 +110,7 @@ class i {
 		System.out.println("\tarea:\t" + f1.area());
 		System.out.println("\n\tSTOP FUNCTION\t\n");
 		f1 = t2;
+		f1.gmsg();
 		t2.sc();
 		System.out.println("\tarea:\t" + f1.area());
 		System.out.println("\n\tSTOP FUNCTION\t\n");
