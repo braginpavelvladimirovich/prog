@@ -35,7 +35,7 @@ class t extends tds {
 	String ssn() {
 		return super.n;
 	}
-	void gmsg() {
+	final void gmsg() {
 		System.out.println("\tmessage triangle");
 	}
 }
@@ -55,9 +55,11 @@ class r extends tds {
 		else
 			return false;
 	}
+	/*
 	void gmsg() {
 		System.out.println("\tmessage rectangle");
 	}
+	*/
 }
 class ct extends t {
 	String co;
