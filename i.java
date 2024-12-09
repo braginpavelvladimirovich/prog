@@ -57,6 +57,7 @@ class r extends tds {
 }
 class i {
 	public static void main(String[] args) {
+		System.out.println("\n\tSTART\t\n");
 		tds f1 = new tds(20.0, 30.0);
 		t t1 = new t("\tasd\t",4.5,7.0);
 		t t2 = new t("\tcontur\t",3.5,8.0);
@@ -79,6 +80,7 @@ class i {
 		System.out.println("\tr2:\t" + r2.n);
 		System.out.println("\tsquare?:\t" + r2.is());
 		System.out.println("\tarea:\t" + r2.area());
+		System.out.println("\n\tSTOP FUNCTION\t\n");
 		//System.out.println(f1.width);
 		//System.out.println(t1.width);
 		//vakue superclass can link on object any sublcass
@@ -87,5 +89,6 @@ class i {
 		System.out.println(f1.gw());
 		f1 = r1;
 		System.out.println(f1.gw());
+		System.out.println("\n\tEND\t\n");
 	}
 }
