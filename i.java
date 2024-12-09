@@ -92,6 +92,9 @@ class i {
 		f1 = r1;
 		System.out.println("\twidth:\t" + f1.gw());
 		System.out.println("\tarea:\t" + f1.area());
+		System.out.println("\n\tSTOP FUNCTION\t\n");
+		System.out.println((int)0x7fffffff);
+		System.out.println("\n\tSTOP FUNCTION\t\n");
 		System.out.println("\n\tEND\t\n");
 	}
 }
