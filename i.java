@@ -138,6 +138,7 @@ class i {
 		System.out.println(Float.intBitsToFloat((int)0x80000001));
 		System.out.println("\tMIN VALUE BIT\t" + Float.intBitsToFloat((int)0x00000000));
 		System.out.println("\tMAX VALUE BIT\t" + Float.intBitsToFloat((int)0xffffffff));
+		System.out.println("\t00800000\t" + Float.intBitsToFloat((int)0x00800000));
 		System.out.println("\n\tSTOP FUNCTION\t\n");
 		System.out.println("\n\tEND\t\n");
 	}
