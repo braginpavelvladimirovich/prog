@@ -84,11 +84,14 @@ class i {
 		//System.out.println(f1.width);
 		//System.out.println(t1.width);
 		//vakue superclass can link on object any sublcass
-		System.out.println(f1.gw());
+		System.out.println("\twidth:\t" + f1.gw());
+		f1.area();
 		f1 = t1;
-		System.out.println(f1.gw());
+		System.out.println("\twidth:\t" + f1.gw());
+		f1.area();
 		f1 = r1;
-		System.out.println(f1.gw());
+		System.out.println("\twidth:\t" + f1.gw());
+		f1.area();
 		System.out.println("\n\tEND\t\n");
 	}
 }
