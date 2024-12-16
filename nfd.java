@@ -9,7 +9,18 @@ class nf < A extends Number > {
 	double f() {
 		return num.doubleValue() - num.intValue();
 	}
+	boolean ae(nf < ? > ob) {
+		if ( Math.abs(num.doubleValue()) == Math.abs(ob.num.doubleValue()))
+			return true;
+		return false;
+	}
 }
+/*
+ * restrict lasses by nasledvanie
+ * class pair < A , B extends A > {
+ * ...
+ * }
+*/
 class nfd {
 	public static void main ( String [] args ) {
 		nf ob;
@@ -23,5 +34,12 @@ class nfd {
 		ob = dob;
 		System.out.println ( "\n\tvyvod:\t" + ob.r());
 		System.out.println ( "\n\tvyvod:\t" + ob.f());
+		//nf < String > sob;
+		//sob = new nf < > ( "str" ) ;
+		System.out.println ( "\n\tEND\t\n" );
+		nf < Integer > iob2;
+		iob2 = new nf < > ( 7 ) ;
+		nf < Integer > iob3;
+		iob3 = new nf < > ( 7 ) ;
 	}
 }
