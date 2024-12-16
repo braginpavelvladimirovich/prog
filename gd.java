@@ -1,2 +1,3 @@
-class gen <t> {
+class gen <A,B> {
 }
+class gd
