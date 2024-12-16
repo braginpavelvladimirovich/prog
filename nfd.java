@@ -39,7 +39,11 @@ class nfd {
 		System.out.println ( "\n\tEND\t\n" );
 		nf < Integer > iob2;
 		iob2 = new nf < > ( 7 ) ;
-		nf < Integer > iob3;
-		iob3 = new nf < > ( 7 ) ;
+		nf < Double > dob2;
+		dob2 = new nf < > ( -7.0 ) ;
+		if (iob2.ae(dob2))
+			System.out.println ( "\n\tEqual\t\n" );
+		else
+			System.out.println ( "\n\tNOT Equal\t\n" );
 	}
 }
