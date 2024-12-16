@@ -20,5 +20,6 @@ class gm {
 			System.out.println("\n\tEQUAL\t\n");
 		else
 			System.out.println("\n\tNOT EQUAL\t\n");
+		System.out.println("\n\tEND\t\n");
 	}
 }
